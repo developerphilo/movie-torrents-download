@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #313146;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  flex-wrap: wrap;
+  display: flex;
 }
+.nav{
+  height: 80vh;
+  background-image: url('./images/fury-wallpaper-1920x1080.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.7; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.nav-bar{
+display: flex;
+justify-content: space-around;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.nav-bar ul{
+  display: flex;
+  list-style-type: none;
+  /* margin: 0; */
+  padding: 0;
+}
+.nav-bar ul li{
+  padding: 0 15px;
+}
+a {
+  cursor: pointer;
+}
+.featured{
+  padding-top: 100px;
+  padding-left: 100px;
+  font-weight: 100;
+  opacity: ;
+}
+/* opacity or the page */
+
+.input{
+  padding-left: 100px;
+  outline: none;
+  background:none;
+  border: none;
+  outline: none;
+
+}
+input {
+    border:none;
+    border-bottom: 5px solid #1890ff;
+    padding: 7px 20px;
+    outline: 0;
+    background: none;
+    font-size: 24px;
+}
+input:focus {
+  border-color: 5px solid green;
+}
+button{
+  padding: 7px 20px;
+  cursor: pointer;
+}
+/* styling for the movies section */
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  padding:40px 0 0 0;
+  margin-top: 10px;
+  justify-content: space-around;
+
+  margin: 0 100px;
+}
+.movies .movie{
+  cursor: pointer;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  height: 300px;
+  width: 250px;
+  padding-bottom: 150px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movies .movie img{
+  display: block;
+  border-radius: 7px;
+}
+.movies .movie h2{
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  /* flex: 1 1 100%; */
+  transition: 0.5s ease-out;
+  line-height: 24px;
 }
