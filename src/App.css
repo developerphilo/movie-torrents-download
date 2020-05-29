@@ -141,6 +141,7 @@ button{
 }
 .intro .plot p{
   padding: 0px 30px;
+  line-height: 140%;
 }
 .intro button{
   margin-top: 20px;
@@ -150,4 +151,12 @@ button{
 .intro button:hover{
   color: white;
   background: green;
+}
+.downlo{
+  display: flex;
+}
+.downlo button{
+  margin-left: 200px;
+  margin-top: 50px;
+
 }
