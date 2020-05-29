@@ -1,13 +1,14 @@
 import React from 'react';
 import Movie from './Movie';
 
-function Movies( { movies }) {
+function Movies( { movies ,  openPopup }) {
 
 
     return (
         <div className="movies">
+            <div></div>
             {movies.map(movie =>(
-                <Movie movie={movie} key={movie.id}/>
+                <Movie movie={movie} id={movie.id} openPopup={openPopup}/>
             ))}
         </div>
     )

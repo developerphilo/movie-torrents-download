@@ -18,6 +18,9 @@ function Navbar({ handleInput , Search }){
 
                         }, []);
 
+
+                          
+
                 // fetch movies and store in the sfeatured movie state
             const featuredMovie= ()=>{
                 fetch(`https://yts.mx/api/v2/movie_suggestions.json?movie_id=30`)

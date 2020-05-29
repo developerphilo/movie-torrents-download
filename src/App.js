@@ -2,6 +2,7 @@ import React , { useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Movies from './Components/Movies';
+import Popup from './Components/Popup';
 
 const App= ()=>{
 
@@ -9,7 +10,7 @@ const App= ()=>{
                               const[ state , setState]=useState({
                                       title:"rabbit",
                                       results:[],
-                                      selected:[]
+                                      selected:{}
 
                                 });
                               
@@ -33,12 +34,32 @@ const App= ()=>{
                                   return{...prevState, title:typed}
                                 })
                               };
-                              console.log(state.results);
+
+                              const openPopup=(id)=>{
+                                fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+                                .then(response=>response.json())
+                                .then(data=>{
+                                  let selected = data.data.movie;
+                                  setState(prevState=>{
+                                    return{...prevState, selected:selected }
+                                  })
+                                })
+                              }
+
+                              
+
+
+                              const closePopup=()=>{
+                                setState(prevState=>{
+                                  return{...prevState, selected :{}}
+                                })
+                              }
                 return (
 
                         <div className="App">
                           <Navbar handleInput={ handleInput } Search={ Search }  />
-                          <Movies movies={state.results} />
+                          <Movies movies={state.results} openPopup={  openPopup } />
+                          {(typeof state.selected.title !="undefined")? <Popup  selected={state.selected} closePopup={closePopup}/>: false}
 
                         </div>
                 );

@@ -39,7 +39,7 @@ a {
   cursor: pointer;
 }
 .featured{
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 100px;
   font-weight: 100;
   opacity: ;
@@ -61,6 +61,7 @@ input {
     outline: 0;
     background: none;
     font-size: 24px;
+    color: black;
 }
 input:focus {
   border-color: 5px solid green;
@@ -76,6 +77,8 @@ button{
   padding:40px 0 0 0;
   margin-top: 10px;
   justify-content: space-around;
+  font-weight: 100;
+  font-size: 24px;
 
   margin: 0 100px;
 }
@@ -92,12 +95,59 @@ button{
 .movies .movie img{
   display: block;
   border-radius: 7px;
+  margin: 3px solid green;
 }
 .movies .movie h2{
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   padding: 10px;
-  /* flex: 1 1 100%; */
+  flex: 1 1 100%;
   transition: 0.5s ease-out;
   line-height: 24px;
+}
+.movies .movie:hover h2{
+  background: #fff;
+  color:#223343;
+  border-radius: 6px;
+}
+
+/* styling for the popup section */
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #313146;
+  overflow-y: scroll;
+
+}
+.intro{
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  /* padding: 25px; */
+  border: 0;
+  color: #fff;
+
+}
+.intro img{
+  border-radius: 7px;
+}
+.intro .plot{
+  display: flex;
+  flex: wrap;
+}
+.intro .plot p{
+  padding: 0px 30px;
+}
+.intro button{
+  margin-top: 20px;
+  padding: 12px 30px;
+  margin-left: 5px;
+}
+.intro button:hover{
+  color: white;
+  background: green;
 }
