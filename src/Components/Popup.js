@@ -5,11 +5,8 @@ import { faStar, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function Popup( { selected, closePopup }) {
 
-    var popStyle={
-        backgroundImage: '{ selected.medium_cover_image }'
-    }
     return (
-        <div className="popup" style={popStyle}>
+        <div className="popup">
             <div className="intro">
                         <h1>{selected.title}</h1>
                         <h3>Genres: {selected.genres}</h3>
@@ -29,7 +26,7 @@ function Popup( { selected, closePopup }) {
                                        
                                        <div>
                                                 <button className="downbtn"  >
-                                                            <FontAwesomeIcon icon={faDownload} />
+                                                Download {""}<FontAwesomeIcon icon={faDownload} />
                                                 </button>
                                        </div>
 

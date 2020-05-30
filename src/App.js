@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Movies from './Components/Movies';
 import Popup from './Components/Popup';
+import Upcoming from './Components/Upcoming';
 
 const App= ()=>{
 
@@ -57,9 +58,11 @@ const App= ()=>{
 
                         <div className="App">
                           <Navbar handleInput={ handleInput } Search={ Search }  />
+                          
                           <Movies movies={state.results} openPopup={  openPopup } />
                           {(typeof state.selected.title !="undefined")? <Popup  selected={state.selected} closePopup={closePopup}/>: false}
-
+                          <Upcoming />
+                          
                         </div>
                 );
               

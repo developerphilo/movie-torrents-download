@@ -118,7 +118,7 @@ button{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('./images/jumanji_the_next_level_movie_2019-wallpaper-2560x1080.jpg');
+  background-image: url('./images/no_time_to_die_movie_2020-wallpaper-2048x1152.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,5 +167,59 @@ button{
 }
 /* stying for the downloadd btn */
 .downbtn{
-  padding: 15px 50px;
+  padding: 15px;
+}
+/* this is the styling for the upcoming section */
+.upcoming{
+  display: flex;
+  flex-wrap: wrap;
+  padding:40px 0 0 0;
+  margin-top: 10px;
+  justify-content: space-around;
+  font-weight: 100;
+  font-size: 24px;
+
+  margin: 0 100px;
+}
+.upcoming .movi{
+  cursor: pointer;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  padding-bottom: 150px;
+  margin-bottom: 50px;
+
+}
+.upcoming .movi img{
+  display: block;
+  border-radius: 7px;
+  margin: 3px solid green;
+}
+.upcoming .movi h2{
+  color: #fff;
+  font-size: 24px;
+  margin:0;
+  padding: 10px;
+  flex: 1 1 100%;
+  transition: 0.5s ease-out;
+  line-height: 24px;
+}
+.upcoming .movi:hover h2{
+  background: #fff;
+  color:#223343;
+  border-radius: 6px;
+}
+.upcoming .movie p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: white;
+
+}
+.heading{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
