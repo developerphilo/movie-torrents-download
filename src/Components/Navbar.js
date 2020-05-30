@@ -1,6 +1,6 @@
 import React , { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar , faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faStar , faSearch} from '@fortawesome/free-solid-svg-icons';
 
 function Navbar({ handleInput , Search }){
 

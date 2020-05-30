@@ -35,15 +35,14 @@ const App= ()=>{
                                 })
                               };
 
-                              const openPopup=(id)=>{
-                                fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
-                                .then(response=>response.json())
-                                .then(data=>{
+                              const openPopup =async(id)=>{
+                                const response = await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+                                const data = await response.json();
                                   let selected = data.data.movie;
                                   setState(prevState=>{
                                     return{...prevState, selected:selected }
-                                  })
-                                })
+                                  }
+                                  );
                               }
 
                               
