@@ -1,7 +1,7 @@
 import React ,{ useState , useEffect} from 'react';
 import Movi from './Movi';
 
-function Upcoming() {
+function Upcoming( { openPopup }) {
 
 
     useEffect(()=>{
@@ -29,7 +29,7 @@ function Upcoming() {
             
                 <div className="upcoming">
                     {movie.map(movi=>(
-                        <Movi movi={movi} />
+                        <Movi movi={movi}  id={movi.id} openPopup={  openPopup } />
                     ))}
                     
                 </div>

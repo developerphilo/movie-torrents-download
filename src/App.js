@@ -61,7 +61,7 @@ const App= ()=>{
                           
                           <Movies movies={state.results} openPopup={  openPopup } />
                           {(typeof state.selected.title !="undefined")? <Popup  selected={state.selected} closePopup={closePopup}/>: false}
-                          <Upcoming />
+                          <Upcoming openPopup={  openPopup }  />
                           
                         </div>
                 );
