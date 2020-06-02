@@ -1,4 +1,6 @@
 import React , { useState, useEffect } from 'react';
+
+import { BrowserRouter as Router ,Switch, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar , faSearch} from '@fortawesome/free-solid-svg-icons';
 
@@ -8,19 +10,11 @@ function Navbar({ handleInput , Search }){
                     const[state,setState] =useState({
                         feature: [],
                         genres: []
-                        });
-                    
-                        // this is the feature function
-       
+                        });                 
+                        // this is the feature function      
                         useEffect(() => {
-
                                 featuredMovie()
-
                         }, []);
-
-
-                          
-
                 // fetch movies and store in the sfeatured movie state
             const featuredMovie= ()=>{
                 fetch(`https://yts.mx/api/v2/movie_suggestions.json?movie_id=30`)
@@ -30,12 +24,9 @@ function Navbar({ handleInput , Search }){
                     data.data.movies.map(row => dtmovi=row );
                     setState(prevState =>{
                         return{...prevState, feature: dtmovi}
-                    });
-                
+                    });               
                 })
-
             }
-
     const title = state.feature.title;
     const rating = state.feature.rating;
     const year = state.feature.year;
