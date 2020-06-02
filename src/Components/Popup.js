@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faDownload } from '@fortawesome/free-solid-svg-icons';
 
@@ -25,8 +28,11 @@ function Popup( { selected, closePopup }) {
                                        
                                        
                                        <div>
+                                           {/* <Link to={ selected.torrents[0].url }> */}
                                                 <button className="downbtn"  >
+                                                    <a href={ selected.torrents[0].url }>
                                                 Download {""}<FontAwesomeIcon icon={faDownload} />
+                                                    </a>
                                                 </button>
                                        </div>
 

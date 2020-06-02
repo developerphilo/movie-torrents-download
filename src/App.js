@@ -1,4 +1,7 @@
 import React , { useState } from 'react';
+
+
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Movies from './Components/Movies';
@@ -39,7 +42,9 @@ const App= ()=>{
                               const openPopup =async(id)=>{
                                 const response = await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
                                 const data = await response.json();
+                                
                                   let selected = data.data.movie;
+                                  console.log(selected);
                                   setState(prevState=>{
                                     return{...prevState, selected:selected }
                                   }
@@ -57,11 +62,14 @@ const App= ()=>{
                 return (
 
                         <div className="App">
-                          <Navbar handleInput={ handleInput } Search={ Search }  />
+                          <Router>
                           
-                          <Movies movies={state.results} openPopup={  openPopup } />
-                          {(typeof state.selected.title !="undefined")? <Popup  selected={state.selected} closePopup={closePopup}/>: false}
-                          <Upcoming openPopup={  openPopup }  />
+                                  <Navbar handleInput={ handleInput } Search={ Search }  />                         
+                                  <Movies movies={state.results} openPopup={  openPopup } />
+                                  {(typeof state.selected.title !="undefined")? <Popup  selected={state.selected} closePopup={closePopup}/>: false}
+                                  <Upcoming openPopup={  openPopup }  />
+
+                          </Router>
                           
                         </div>
                 );

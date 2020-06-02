@@ -223,3 +223,9 @@ button{
   justify-content: center;
   align-items: center;
 }
+
+/* styling for the download icon */
+a{
+  text-decoration: none;
+  color: black;
+}
