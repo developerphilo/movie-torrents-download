@@ -1,16 +1,3 @@
-This project was created with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `This Application lets you search your favourite movies and download torrent for the movies`
-I also included suggestion for `movies of the week` on the header section.
+**MOVIE TORRENT DOWNLOAD SITE**
+this application allows users to download movie torrents
+Users can also see the movie ratings,search for movies, read some info relating to the movies and the genres of the movies before downloading
