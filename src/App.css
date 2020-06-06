@@ -43,6 +43,10 @@ justify-content: space-around;
 }
 a {
   cursor: pointer;
+  font-size: 20px;
+}
+h3{
+  font-size: 20px;
 }
 .featured{
   padding-top: 80px;
