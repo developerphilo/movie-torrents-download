@@ -20,7 +20,7 @@ p{
 }
 .nav{
   height: 80vh;
-  background-image: url('./images/deadpool_2_bullets-wallpaper-1920x1080.jpg');
+  background-image: url('https://images.pexels.com/photos/4064840/pexels-photo-4064840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +67,7 @@ h3{
 @media only screen and (min-width: 600px) {
 
   .input{
-    padding-left: 30px;
+    padding-left: 50px;
   }
 }
 
