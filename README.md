@@ -9,4 +9,6 @@ Users can also see the movie ratings,search for movies, read some info relating 
 
 
 
-This application also allows users to see movie ratinga with poster and movie description
+This application also allows users to view movie ratings with poster and movie description
+
+**Adding trailer API in Development**
