@@ -16,7 +16,8 @@ This application also allows users to view movie ratings with poster and movie d
 
 **Adding trailer video in Development**
 
-Clone the repository
+
+**Clone the repository**
 
 Install Node Js and on the root of the application run the command *npm install* to install all the dependencies required by the applicant
 
