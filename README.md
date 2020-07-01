@@ -22,3 +22,5 @@ This application also allows users to view movie ratings with poster and movie d
 Install Node Js and on the root of the application run the command *npm install* to install all the dependencies required by the applicant
 
 To run the application use the command *npm start* to start the project into your web browser
+
+#ENJOY
