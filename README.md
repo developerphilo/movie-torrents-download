@@ -23,4 +23,6 @@ Install Node Js and on the root of the application run the command *npm install*
 
 To run the application use the command *npm start* to start the project into your web browser
 
-#ENJOY
+
+
+**ENJOY**
